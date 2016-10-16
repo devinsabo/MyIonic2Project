@@ -25,7 +25,7 @@ import {AppToken, AppConfig, APP_CONFIG} from './app.config';
     ListPage
   ],
   providers: [
-    {provide:AppToken, useValue:APP_CONFIG}
+    {provide:AppToken, useClass:APP_CONFIG}
   ]
 })
 export class AppModule {}
